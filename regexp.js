@@ -44,7 +44,8 @@
 
 // complex pettern
 
-let str4 = 'My email is john.doe@example.com and my phone number is (123) 456-7890.';
+let str5 = 'My email is john.doe@example.com and my phone number is (123) 456-7890.';
 let regex4 = /(\w+\.?\w+)@(\w+\.\w{2,})|(\(\d{3}\)\s*\d{3}-\d{4})/g;
-let result4 = str4.match(regex4);
-console.log(result4); // output: ["john.doe@example.com", "(123) 456-7890"]
+let result4 = str5.match(regex4);
+console.log(result4);  
+ 
