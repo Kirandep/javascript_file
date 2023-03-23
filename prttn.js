@@ -1,18 +1,17 @@
 // hollow prttn
 
-// string="";
+string="";
 
-// for( i=0;i<10;i++){
-//     for(j=0;j<10;j++){
-//         if(i==0||i==1 || i==4|| i==5 ||j==0||j==1||j==2|| j==7||j==8 ||j==9)
-//         string +='*';
-//         else(
-//             string +=" "
-//         )
-//     }
-//     string +='\n'
-// }
-// console.log(string)
+for( i=0;i<10;i++){
+    for(j=0;j<10;j++){
+        
+        else(
+            string +=" "
+        )
+    }
+    string +='\n'
+}
+console.log(string)
 
 
 
@@ -146,30 +145,30 @@
 
 
 
-string= ""
-    for (i = 0; i < 5; i++) {
-        for (j = 0; j < 6; j++) {
-            if ((i == 0 || i == 5 - 1)
-                && (j == 0 || j == 6 - 1))
-                string+=("  ");
-            else if (j == 0)
-                string+=("*");
-            else if (i == 0 && j <= 5)
-                string+=("*");
-            else if (i == (5 / 2)
-                && j > (5 / 2))
-                string+=("*");
-            else if (i > (5 / 2)
-                && j == 6 - 1)
-                string+=("*");
-            else if (i == 5 - 1
-                && j < 6)
-                string+=("*");
-            else
-                string+=("  ");
-        }
-       console.log(string)  
-    }
+// string= ""
+//     for (i = 0; i < 5; i++) {
+//         for (j = 0; j < 6; j++) {
+//             if ((i == 0 || i == 5 - 1)
+//                 && (j == 0 || j == 6 - 1))
+//                 string+=("  ");
+//             else if (j == 0)
+//                 string+=("*");
+//             else if (i == 0 && j <= 5)
+//                 string+=("*");
+//             else if (i == (5 / 2)
+//                 && j > (5 / 2))
+//                 string+=("*");
+//             else if (i > (5 / 2)
+//                 && j == 6 - 1)
+//                 string+=("*");
+//             else if (i == 5 - 1
+//                 && j < 6)
+//                 string+=("*");
+//             else
+//                 string+=("  ");
+//         }
+//        console.log(string)  
+//     }
 
 
 
