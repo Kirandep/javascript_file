@@ -34,40 +34,40 @@
 
 
 
-class user{
-  constructor(email,password){
-    this.email=email;
-    this.password=password;
-  }
+// class user{
+//   constructor(email,password){
+//     this.email=email;
+//     this.password=password;
+//   }
 
-  vaildateemail(){
-    const emailRegex = /@.com/;
-    if (!this.email.match(emailRegex)) {
-     console.log(`${this.email} is not a valid email address.`);
-    }
-    else{
-        console.log(this.email)
-          }
-
-
-  }
-  vaildateepassword(){
-  const  passwordRegex = /1deep@56774/;
-    if (!this.email.match(passwordRegex)) {
-     console.log(`${this.password} is not a valid email address.`);
-    }
-    else{
-        console.log(this.password)
-          }
+//   vaildateemail(){
+//     const emailRegex = /@.com/;
+//     if (!this.email.match(emailRegex)) {
+//      console.log(`${this.email} is not a valid email address.`);
+//     }
+//     else{
+//         console.log(this.email)
+//           }
 
 
-  }
-}
+//   }
+//   vaildateepassword(){
+//   const  passwordRegex = /1deep@56774/;
+//     if (!this.email.match(passwordRegex)) {
+//      console.log(`${this.password} is not a valid email address.`);
+//     }
+//     else{
+//         console.log(this.password)
+//           }
 
-deep=new user("deep@.com","1deep@56774")
 
-deep.vaildateemail()
-deep.vaildateepassword()
+//   }
+// }
+
+// deep=new user("deep@.com","1deep@56774")
+
+// deep.vaildateemail()
+// deep.vaildateepassword()
 
 
 
@@ -92,3 +92,95 @@ deep.vaildateepassword()
 // } else {
 //   console.log("Password is invalid");
 // }
+
+
+
+
+
+
+
+
+
+
+// const prompt=require("prompt") ;
+// class User {
+//   constructor(email, password) {
+//     this.email = email;
+//     this.password = password;
+//   }
+
+//   validateEmail() {
+//     const emailRegex = /@.com/;
+//     if (!emailRegex.test(this.email)) {
+//       console.log(`${this.email} is not a valid email address.`);
+//     } else {
+//       console.log(this.email);
+//     }
+//   }
+
+//   validatePassword() {
+//     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+//     if (!passwordRegex.test(this.password)) {
+//       console.log(`${this.password} is not a valid password.`);
+//     } else {
+//       console.log(this.password);
+//     }
+//   }
+// }
+// // const prompt = require('prompt');
+
+// const email = prompt("Enter your email address:");
+// const password = prompt("Enter your password:");
+
+// const user = new User(email, password);
+// user.validateEmail();
+// user.validatePassword();
+
+
+
+
+ 
+
+
+
+const prompt = require('prompt');
+
+class User {
+  constructor(email, password) {
+    this.email = email;
+    this.password = password;
+  }
+
+  validateEmail() {
+    const emailRegexp = /^\S+@\S+./;
+    if (!this.email.match(emailRegexp)) {
+      console.log(`${this.email} is not a valid email address`);
+    } else {
+      console.log(`${this.email} is a valid email address`);
+    }
+  }
+
+  validatePassword() {
+    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    if (!this.email.match(passwordRegex)) {
+      console.log(`${this.password} is not a valid password.`);
+    } else {
+      console.log(this.password);
+    }
+  }
+}
+
+
+prompt.start();
+
+prompt.get(['email', 'password'], function (err, result) {
+  if (err) { return onErr(err); }
+  const user = new User(result.email, result.password);
+  user.validateEmail();
+  user.validatePassword();
+});
+
+function onErr(err) {
+  console.log(err);
+  return 1;
+}
