@@ -1,11 +1,11 @@
 
 
 
-// // word find 
-// let str = 'The quick brown fox jumps over the lazy dog.';
-// let regex = /over/;
-// let result = str.match(regex);
-// console.log(result); 
+// word find 
+let str = 'The quick brown fox jumps Over the lazy dog.';
+let regex = /over/;
+let result = str.match(regex);
+console.log(result); 
 
 
 

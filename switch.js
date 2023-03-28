@@ -1,12 +1,13 @@
-string1= 'i like'
+x= 9
 
-switch(3){
+switch(x){
     case 1:
-        console.log(string1+' coffe');
+        
+        console.log(x+' coffe');
        break;
-       case 2:
-        console.log(string1+ ' tea')
-        break;
-        case 3: 
-            console.log(string1+' daru')
+    case 9:
+        
+        console.log(x+' gfjhklilyutrjdhfgxbvvnjkhjoiouyutfygj');
+       break;
+       
 }

@@ -181,3 +181,17 @@ class ArrayMethod {
       
   
   console.log(myArray.reduceMethod()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

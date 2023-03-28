@@ -2,8 +2,30 @@
 
 string="";
 
-for( i=0;i<10;i++){
+// for( i=0;i<10;i++){
+//     for(j=0;j<10;j++){
+//          if(i=0){
+//             string+="*"
+//             console.log(string)
+//          }
+//          else{
+//             string+=" "
+//          }
+//     }
+//     string +='\n'
+// }
+// console.log(string)
+
+
+
+
+string="";
+
+for( i=0;i<11;i++){
     for(j=0;j<10;j++){
+        if(j==0 || i==0)
+        string +=' *';
+        
         
         else(
             string +=" "
@@ -12,23 +34,6 @@ for( i=0;i<10;i++){
     string +='\n'
 }
 console.log(string)
-
-
-
-
-// string="";
-
-// for( i=0;i<11;i++){
-//     for(j=0;j<10;j++){
-//         if(j==0|| j==1|| i==0||i==1|| i==5||i==6)
-//         string +=' *';
-//         else(
-//             string +=" "
-//         )
-//     }
-//     string +='\n'
-// }
-// console.log(string)
 
 
 // program to check if a number is prime or not
