@@ -43,7 +43,7 @@ console.log(string)
 
 
 // const number =  7;
-// let isPrime = true;
+//    prime = true;
 
 // // check if number is equal to 1
 // if (number === 1) {
@@ -54,14 +54,14 @@ console.log(string)
 // else if (number > 1) {
 
 //     // looping through 2 to number-1
-//     for (let i = 2; i < number; i++) {
+//     for (  i = 2; i < number; i++) {
 //         if (number % i == 0) {
-//             isPrime = false;
+//              prime = false;
 //             break;
 //         }
 //     }
 
-//     if (isPrime) {
+//     if ( prime) {
 //         console.log(`${number} is a prime number`);
 //     } else {
 //         console.log(`${number} is a not prime number`);

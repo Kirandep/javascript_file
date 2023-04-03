@@ -13,7 +13,7 @@
 //       }
   
 //       if (!passwordRegex.test(password)) {
-//         return 'Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.';
+//         return 'Password must be at least 8 characters long and contain at least one uppercase  ter, one lowercase  ter, and one number.';
 //       }
   
 //       return new User(email, password);

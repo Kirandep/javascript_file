@@ -1,14 +1,14 @@
  
-let length = 16;
-let weight = 7.5;
+  length = 16;
+  weight = 7.5;
 
  
-let color = "Yellow";
-let lastName = "Johnson";
+  color = "Yellow";
+  lastName = "Johnson";
 
  
-let x = true;
-let y = false;
+  x = true;
+  y = false;
 
  
 const person = {firstName:"John", lastName:"Doe"};

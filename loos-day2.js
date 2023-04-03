@@ -25,10 +25,10 @@
 // }
  
 
-// let res = "  1\t 2\t 3\t 4\t 5\t 6\t 7\t 8\t 9\t10"
-// for (let i = 2; i <= 10; i++) {
+//   res = "  1\t 2\t 3\t 4\t 5\t 6\t 7\t 8\t 9\t10"
+// for (  i = 2; i <= 10; i++) {
 //     res += `\n${i < 10 ? ' ' + i : i}`
-//     for (let j = 2; j <= 10; j++) {
+//     for (  j = 2; j <= 10; j++) {
 //         res += `\t${i * j >= 10 ? i*j : ' ' + i*j}`
 //     }
 // }
@@ -36,8 +36,8 @@
 
 
 
-let string="";
-for(let i=1; i<11; i++){
+  string="";
+for(  i=1; i<11; i++){
     string +=`\n`;
     for(j=1; j<11; j++){
   
