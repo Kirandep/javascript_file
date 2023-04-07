@@ -19,7 +19,7 @@
 // fullfill state
 // const count = true;
 // countValue = new Promise(function(resolve, reject){
-//     resolve("there is a countValue")
+//     resolve("there is a countValue" )
 //     reject("there is no countValue")
 // })
 // console.log(countValue)
@@ -28,13 +28,13 @@
 
 
 // // get result without print promise object
-const count = true;
-a="deep"
-countValue = new Promise(function(resolve, reject) {
-    resolve("there is a countValue")
-    reject("there is no countValue")
-})
-countValue.then((a)=>{console.log(a)})
+// const count = true;
+
+// countValue = new Promise(function(resolve, reject) {
+//     resolve("there is a countValue")
+//     reject("there is no countValue")
+// })
+// countValue.then((m)=>{console.log(m)})
 
 
 
@@ -54,19 +54,67 @@ countValue.then((a)=>{console.log(a)})
 //     return user;
 // }
 // console.log(findUser('john'))
+// console.log(findUser('deep'))
 // console.log(findUser('jane'))
 
 
 
+// function getUser(){
+//     return new Promise ((resolve,reject)=>{
+//         User=[]
+//         setTimeout(()=>{
+//             Users = [{userName: 'john', email:'john@g.com'},
+//             { userName: 'jane', email: 'jane@g.com'}]
+//             resolve(Users);
+//         },2000);
+//     });
+// }
+// const Promise=getUser();
+// Promise.then((Users)=>{
+//     console.log(Users);
+// });
+// getUsers().then((Users,username='jhon')=>{
+//     const User=Users.find((users)=>Users.username===username);
+//     console.log(User)
+// })
+
+
+
+function getUser() {
+    return new Promise((resolve, reject) => {
+      Users = []; // fix the name of the array
+      setTimeout(() => {
+        Users = [
+          { userName: 'john', email: 'john@g.com' },
+          { userName: 'jane', email: 'jane@g.com' }
+        ];
+        resolve(Users);
+      }, 2000);
+    });
+  }
+
+
+ 
+
+  
+  getUser().then((Users) => {
+    console.log(Users);
+  });
+  
+  getUser().then((Users, username = 'john') => {  
+    const User = Users.find((user) => user.userName === username);  
+    console.log(User);
+  });
+  
 
 
 // function getUsers(cb){
 //     let Users =[]
-//         setTimeout(()=>{
+         
 //             Users = [{userName: 'john', email:'john@g.com'},
 //                   { userName: 'jane', email: 'jane@g.com'}]
 //                   cb(Users);
-//             },1000)
+             
           
 //         return Users;
        
@@ -85,3 +133,37 @@ countValue.then((a)=>{console.log(a)})
 
 
 
+
+
+
+// const count = false;
+// const countValue = new Promise(function(resolve, reject) {
+ 
+//     resolve("there is a countValue");
+  
+//     reject("there is no countValue");
+  
+// });
+
+// countValue.then((result) => {
+//   console.log(result); 
+// }, (error) => {
+//   console.log(error); 
+// });
+
+
+
+
+
+//   count= 0
+// countValue= new Promise(function(resolve,reject){
+//     resolve(`the count will increase ${count++}`)
+//     reject(`count veriable will not change`)
+// });
+// countValue.then((value)=>console.log(value))
+
+
+
+
+
+ 
