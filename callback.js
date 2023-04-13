@@ -1,5 +1,5 @@
  function callback(x){
-
+return x
  }
 
 function calling(x)
